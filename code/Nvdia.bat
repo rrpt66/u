@@ -524,43 +524,5 @@ Reg.exe add "HKLM\SOFTWARE\NVIDIA Corporation\Global\NVTweak" /v "PowermizerPref
 Reg.exe add "HKLM\SOFTWARE\NVIDIA Corporation\Global\NVTweak" /v "QTwkEnableModeChangeWarning" /t REG_DWORD /d "1" /f
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\nvlddmkm" /v "SimulateSecureBoot" /t REG_DWORD /d "0" /f
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\services\nvlddmkm" /v "DisableMshybridNvsrSwitch" /t REG_DWORD /d "1" /f
-:: GPU
-D3PCLatency -> 1
-
-F1TransitionLatency -> 1
-
-LOWLATENCY -> 1
-
-Node3DLowLatency -> 1
-
-PciLatencyTimerControl -> 32 decimal
-
-RMDeepL1EntryLatencyUsec -> 1
-
-RmGspcMaxFtuS -> 1
-
-RmGspcMinFtuS -> 1
-
-RmGspcPerioduS -> 1
-
-RMLpwrEiIdleThresholdUs -> 1
-
-RMLpwrGrIdleThresholdUs -> 1
-
-RMLpwrGrRgIdleThresholdUs -> 1
-
-RMLpwrMsIdleThresholdUs -> 1
-
-VRDirectFlipDPCDelayUs -> 1
-
-VRDirectFlipTimingMarginUs -> 1
-
-VRDirectJITFlipMsHybridFlipDelayUs -> 1
-
-vrrCursorMarginUs -> 1
-
-vrrDeflickerMarginUs -> 1
-
-vrrDeflickerMaxUs -> 1
 :menu
 exit
