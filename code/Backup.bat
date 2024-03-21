@@ -66,5 +66,5 @@ ping -n 2 127.0.0.1>nul
 cls
 echo backup.
 cls
-echo %getcolor%"Successful"
+echo "Successful"
 ping -n 2 127.0.0.1>nul
