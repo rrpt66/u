@@ -34,7 +34,7 @@ cls
 :remoteZ
 cls
 chcp 65001
-title remoteZ
+title cmd.exe
 goto ALL
 
 :ALL
