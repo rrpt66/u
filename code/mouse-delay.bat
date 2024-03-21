@@ -80,6 +80,8 @@ Reg.exe add "HKCU\Control Panel\Cursors" /v "CursorDeadzoneJumpingSetting" /t RE
 Reg.exe add "HKCU\Control Panel\Cursors" /v "ContactVisualization" /t REG_DWORD /d "0" /f
 Reg.exe add "HKCU\Control Panel\Cursors" /v "GestureVisualization" /t REG_DWORD /d "0" /f
 Reg.exe add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" /v "EnableCursorSuppression" /t REG_DWORD /d "0" /f
+Reg.exe add "HKCU\Control Panel\Pen" /v "DoubleTapTime" /t REG_DWORD /d "0" /f
+Reg.exe add "HKCU\Control Panel\Pen" /v "DoubleClickHeight" /t REG_DWORD /d "64" /f
 pause
 :menu
 exit
