@@ -383,6 +383,42 @@ Reg.exe add "HKLM\System\CurrentControlSet\Services\AMD External Events Utility"
 Reg.exe add "HKLM\System\CurrentControlSet\Services\amdfendr" /v "Start" /t REG_DWORD /d "4" /f > nul 2>&1
 Reg.exe add "HKLM\System\CurrentControlSet\Services\amdfendrmgr" /v "Start" /t REG_DWORD /d "4" /f > nul 2>&1
 Reg.exe add "HKLM\System\CurrentControlSet\Services\amdlog" /v "Start" /t REG_DWORD /d "4" /f > nul 2>&1
+:: GPU
+LTRSnoopL1Latency -> 1
+
+LTRSnoopL0Latency -> 1
+
+LTRNoSnoopL1Latency -> 1
+
+LTRMaxNoSnoopLatency -> 1
+
+KMD_RpmComputeLatency -> 1
+
+DalUrgentLatencyNs -> 1
+
+memClockSwitchLatency -> 1
+
+PP_RTPMComputeF1Latency -> 1
+
+PP_DGBMMMaxTransitionLatencyUvd -> 1
+
+PP_DGBPMMaxTransitionLatencyGfx -> 1
+
+DalNBLatencyForUnderFlow -> 1
+
+DalDramClockChangeLatencyNs -> 1 (WARNING: This dword caused massive screen flickering for some people, use it at your own risk. If you're already using it and you have problems, simply delete the dword and reboot the system)
+
+BGM_LTRSnoopL1Latency -> 1
+
+BGM_LTRSnoopL0Latency -> 1
+
+BGM_LTRNoSnoopL1Latency -> 1
+
+BGM_LTRNoSnoopL0Latency -> 1
+
+BGM_LTRMaxSnoopLatencyValue -> 1
+
+BGM_LTRMaxNoSnoopLatencyValue -> 1
 sc config amdlog start=disabled
 sc config "AMD External Events Utility" start=disabled
 cls
