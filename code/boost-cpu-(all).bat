@@ -32,7 +32,6 @@ if '%errorlevel%' NEQ '0' (
 :--------------------------------------   
 cls
 :cpu
-set color=color 0
 cls
 echo Boost ? 
 %color%
