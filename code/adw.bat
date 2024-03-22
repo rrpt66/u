@@ -30,6 +30,7 @@ if '%errorlevel%' NEQ '0' (
     CD /D "%~dp0"
 :--------------------------------------   
 @echo off
+color 0
 del C:\AdwCleaner\Logs\AdwCleaner[S00].txt > nul
 echo cancel Hide file all.......
 attrib -h -r -s /s /d *.* 
@@ -39,6 +40,7 @@ powershell.exe Invoke-WebRequest -Uri "https://adwcleaner.malwarebytes.com/adwcl
 echo Install Awd............
 %temp%\adw.exe /preinstalled
 cls
+color c
 echo scan................
 %temp%\adw.exe /eula /scan /noreboot
 cls
@@ -50,3 +52,34 @@ TIMEOUT 3 /nobreak > nul
 echo -Delete program scan virus....
 TIMEOUT 3 /nobreak > nul
 %temp%\adw.exe /uninstall  & del /q %temp%\adw.exe
+cls
+echo next scan is mrt
+TIMEOUT 3 /nobreak > nul
+mrt.exe /f
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:finish
+color b & echo All scan is finish
+echo =================================
+echo FINISH !!!!!!!!!!!!!!!!!!!!!!! 
+echo =================================
+pause
+
+
