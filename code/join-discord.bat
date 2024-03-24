@@ -41,7 +41,7 @@ if %choix%== yes Goto :dis
 if %choix%== no Goto :menu
 
 :dis
-start https://discord.gg/g2G7PgsfCe
+start https://discord.gg/J9SQuJWUYa
 goto menu
 :menu
 exit
