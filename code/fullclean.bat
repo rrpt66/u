@@ -344,7 +344,28 @@ if exist "%temp_folder%\*" (
   rem แสดงข้อความแจ้งเตือน
   echo "not have folder in %temp_folder%"
 )
-
+del *.log /a /s /q /f
+timeout 2 /nobreak>nul
+DEL /F /S /Q /A %LocalAppData%\Microsoft\Windows\Explorer\thumbcache_*.db
+DEL /f /s /q %temp%\
+DEL /f /s /q %temp%\*.tmp
+DEL /f /s /q %temp%\*
+DEL /f /s /q %systemdrive%\*.tmp
+DEL /f /s /q %systemdrive%\*._mp
+DEL /f /s /q %systemdrive%\*.log
+DEL /f /s /q %systemdrive%\*.gid
+DEL /f /s /q %systemdrive%\*.chk
+DEL /f /s /q %systemdrive%\*.old
+DEL /f /s /q %systemdrive%\recycled\*.*
+DEL /f /s /q %systemdrive%\$Recycle.Bin\*.*
+DEL /f /s /q %windir%\*.bak
+DEL /f /s /q %windir%\prefetch\*.*
+rd /s /q %windir%\temp & md %windir%\temp
+DEL /f /q %userprofile%\cookies\*.*
+DEL /f /q %userprofile%\recent\*.*
+DEL /f /s /q "%userprofile%\Local Settings\Temporary Internet Files\*.*"
+DEL /f /s /q "%userprofile%\Local Settings\Temp\*.*"
+DEL /f /s /q "%userprofile%\recent\*.*"
 goto ee
 rem จบการทำงาน
 :ee
