@@ -34,7 +34,7 @@ cls
 :cpu
 cls
 echo Boost ? 
-SET /p choix=" yes or no ? >  "
+set /p choix=" yes or no ? >  "
 if %choix%== yes Goto :ball
 if %choix%== no Goto :menu
 :ball
