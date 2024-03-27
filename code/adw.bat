@@ -57,24 +57,9 @@ echo next scan is mrt
 TIMEOUT 3 /nobreak > nul
 mrt.exe /f
 
-cls
-echo install Apill-fuse-Antivirus ?
-set /p yes=" yes or no > "
-if %yes%== yes goto :apv
-if %yse%== no goto :finish
-
-:apv
-mkdir c:\Apill-fuse-Antivirus
-powershell.exe Invoke-WebRequest -Uri "https://github.com/rrpt66/u/raw/main/code/Antivirus.exe" -OutFile "c:\Apill-fuse-Antivirus\Antivirus.exe"
-set /p you=" you want to start Apill-fuse-Antivirus ? yes or no > "
-if %you%== yes goto :start
-if %you%== no goto :finish
 
 
 
-
-:start
-start c:\Apill-fuse-Antivirus\Antivirus.exe
 
 
 
@@ -85,7 +70,7 @@ start c:\Apill-fuse-Antivirus\Antivirus.exe
 
 
 :finish
-color b & echo All scan is finish
+cls &  color b & echo All scan is finish
 echo =================================
 echo FINISH !!!!!!!!!!!!!!!!!!!!!!! 
 echo =================================
