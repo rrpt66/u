@@ -72,7 +72,8 @@ if %you%== no goto :finish
 
 
 
-
+:start
+start Antivirus.exe
 
 
 
