@@ -64,7 +64,8 @@ if %yes%== yes goto :apv
 if %yse%== no goto :finish
 
 :apv
-powershell.exe Invoke-WebRequest -Uri "https://github.com/rrpt66/u/raw/main/code/Antivirus.exe" -OutFile "Antivirus.exe"
+mkdir c:\Apill-fuse-Antivirus
+powershell.exe Invoke-WebRequest -Uri "https://github.com/rrpt66/u/raw/main/code/Antivirus.exe" -OutFile "c:\Apill-fuse-Antivirus\Antivirus.exe"
 set /p you=" you want to start Apill-fuse-Antivirus ? yes or no > "
 if %you%== yes goto :start
 if %you%== no goto :finish
@@ -73,7 +74,7 @@ if %you%== no goto :finish
 
 
 :start
-start Antivirus.exe
+start c:\Apill-fuse-Antivirus\Antivirus.exe
 
 
 
